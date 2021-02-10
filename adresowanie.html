@@ -1,0 +1,41 @@
+<html>
+<meta charset="UTF-8">
+<head>
+
+<style>
+ol{
+width: 20%;
+    margin: auto;
+}
+</style>
+
+
+<title> Adresowanie IP </title>
+
+</head>
+
+<body bgcolor=#ff600> <center> <br>
+<b><p style="font-size:40px;"><u>Adresowanie IP</u></p> </b>
+<p style="font-size:25px;">
+Adresowanie jest jednym z najistotniejszych funkcji Warstwy sieci.<br>
+Polega to na tym, że wysłany od początkowego hosta pakiet przesyłany pomiędzy sieciami, <br>
+najpierw trafia do sieci, do której przynależy host, a potem przesyłany jest już do konkretnego hosta. <br>
+Ten typ adresowania nazywany jest<b> adresowaniem hierarchicznym</b>. To dlatego że najpierw odczytywane <br>
+najpierw dane ogólne, w tym przypadku adres sieci hosta, a następnie dopiero dane szczegółowe, czyli <br>
+adres IP konkretnego hosta.<br><br>
+<b>W sieciach komputerowych hosty mogą się ze sobą komunikować na trzy sposoby:</b>
+</p>
+
+<ol style="font-size:25px;" align="left">
+<li><b>Unicast </b>- transmisja pojedynczej</li>
+<li><b>Multicast</b> - rozsyłanie grupowej</li>
+<li><b>Broadcast</b> - rozgłaszaniej</li>
+</ol>
+
+<p style="font-size:25px;">
+<ul style="font-size:25px;">
+<li>Transmisja typu <b>unicast</b> stosowana jest najczęściej, wykorzystywana jest w typowych połączeniach pomiędzy dwoma hostami. Przykładowo, kiedy klient wysyła żądanie do serwera, wykorzystuje do tego właśnie transmisje unicast.</li>
+<li>Zastosowanie transmisji grupowej, czyli <b>multicast</b> w znacznym stopniu pozwala zredukować zużycie pasma w sieci ponieważ nie wysyła się pojedynczych pakietów do wielu hostów, tak jak byłoby to realizowane z użyciem transmisji pojedynczej, lecz wysyła się jeden pakiet, który trafić może do wielu odbiorców jednocześnie.Multicast może być stosowany przez rutery do wymiany informacji związanych z rutingiem, jak również do dystrybucji oprogramowania. W transmisji multicast stosuje się specjalną pulę adresów, zwaną adresami grupowymi, w protokole IPv4 to jest zakres, który widoczny poniżej: </li> <br><img src="zakres.jpg" width="600" height="100"><br><br>
+<li><b>Broadcast</b>, czyli rozgłaszanie, polega z kolei na wysyłaniu pakietów do wszystkich hostów w danej sieci. Wykorzystywany jest do tego specjalny adres, adres rozgłoszeniowy, więc nie jest tak, że w pakiecie IP zapisane są adresy wszystkich hostów w sieci. Byłoby to technicznie nie możliwe, to raz, a dwa transmisję rozgłoszeniową stosuję się na przykład wówczas, kiedy nieznany jest adres konkretnego urządzania. Ten rodzaj transmisji wykorzystywany jest najczęściej w sieciach lokalnych, rzadko zdarza się, że rozgłaszanie stosuje się do komunikacji z hostami spoza danej sieci lokalnej.</li>
+</ul>
+</p>
